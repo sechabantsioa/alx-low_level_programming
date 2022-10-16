@@ -14,7 +14,7 @@ int main(void)
 		if (sgn != 47)
 		{
 			putchar(',');
-			putchar(',');
+			putchar(' ');
 		}
 	}
 
