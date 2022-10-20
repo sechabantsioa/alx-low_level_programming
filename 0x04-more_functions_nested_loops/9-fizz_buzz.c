@@ -1,30 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - multiples of three print Fizz
- * Return: Always 0
+ * main - filter out the 99.5% of programming job candidates
+ * fizz_buzz -> printing to 100
  */
-int main(void)
+
+void main(void)
 {
 	int fn;
 
-	printf("1");
-	for (fn = 2; n <= 100; fn++)
+	for (fn = 1; fn <= 100; fn++)
 	{
-		printf(" ");
-		if (fn % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		if (fn % 5 == 0)
+		if (fn == 100)
 		{
 			printf("Buzz");
 		}
-		if (fn % 3 != 0 && fn % 5 != 0)
+		else if (fn % 3 == 0 && fn % 5 == 0)
 		{
-			printf("%d", n);
+			printf("FizzBuzz ");
 		}
+		else if (fn % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (fn % 5 == 0)
+		{
+			printf("Buzz ");
+		}
+		else
+		{
+			printf("%d ", fn);
+		}
+		printf("\n");
 	}
-	printf("\n");
-	return (0);
 }
