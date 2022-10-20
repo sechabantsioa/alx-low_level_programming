@@ -20,7 +20,7 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		if (fn % e != 0 && fn % 5 != 0)
+		if (fn % 3 != 0 && fn % 5 != 0)
 		{
 			printf("%d", n);
 		}
