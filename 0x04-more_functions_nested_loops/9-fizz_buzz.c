@@ -2,35 +2,37 @@
 
 /**
  * main - filter out the 99.5% of programming job candidates
- * fizz_buzz -> printing to 100
+ * Return: Always 0;
  */
-
-void main(void)
+int main(void)
 {
-	int fn;
+	int n;
 
-	for (fn = 1; fn <= 100; fn++)
+	for (n = 1; n <= 100; n++)
 	{
-		if (fn == 100)
+		if ((n % 3 == 0 && (n % 5) == 0))
+		{
+			printf("FizzBuzz");
+		}
+		else if ((n % 3) == 0)
+		{
+			printf("Fizz");
+		}
+		else if ((n % 3) == 0)
 		{
 			printf("Buzz");
 		}
-		else if (fn % 3 == 0 && fn % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
-		else if (fn % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if (fn % 5 == 0)
-		{
-			printf("Buzz ");
-		}
 		else
 		{
-			printf("%d ", fn);
+			printf("%d", n);
 		}
-		printf("\n");
+		if (n == 100)
+		{
+			continue;
+		}
+		printf(" ");
 	}
+	printf("\n");
+
+	return (0);
 }
