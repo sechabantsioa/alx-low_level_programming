@@ -2,29 +2,29 @@
 
 /**
  * print_triangle - prints a triangle
- * @n: size of the triangle
+ * @size: The sie of the triangle
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
-	int h, tri;
+	int hash, index;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		for (h = 1; h <= n; h++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (tri = n - h; tri > 0; tri--)
+			for (index = size - hash; index > 0; index--)
 			{
 				_putchar(' ');
 			}
-			for (tri = 0; tri < h; tri++)
+			for (index = 0; index < hash; index++)
 			{
 				_putchar('#');
 			}
-			if (h == n)
+			if (hash == size)
 			{
 				continue;
 			}
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
