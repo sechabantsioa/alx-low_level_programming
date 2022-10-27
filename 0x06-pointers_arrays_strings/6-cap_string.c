@@ -2,22 +2,22 @@
 
 /**
  * cap_string - capitalization function
- * @a: string param
+ * @x: string param
  * Return: capitalized version of the string
  */
-char *cap_string(char *a)
+char *cap_string(char *x)
 {
 	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 	int len = 13;
-	int x = 0, i;
+	int a = 0, i;
 
-	while (a[x])
+	while (x[a])
 	{
 		i = 0;
 		while (i < len)
 		{
-			if ((x == 0 || a[x - 1] == spc[i] && (a[x] >= 97 && a[x] <= 122))
-					a[x] = a[x] - 32;
+			if ((a == 0 || s[a - 1] == spc[i] && (s[a] >= 97 && s[a] <= 122))
+					s[a] = s[a] - 32;
 					i++;
 					}
 					a++;
