@@ -9,9 +9,9 @@
  *
  * Return: Always 0 (Success)
  */
-int check_num(char *s)
+int check_num(char *str)
 {
-	insigned int count;
+	unsigned int count;
 
 	count = 0;
 
