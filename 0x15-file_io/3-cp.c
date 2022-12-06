@@ -8,7 +8,7 @@
  * @argv: arguments vector.
  * Return: no return.
  */
-void error_file(int file_from, int file_to, char *argv[])a
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
@@ -21,6 +21,7 @@ void error_file(int file_from, int file_to, char *argv[])a
 		exit(99);
 	}
 }
+
 /**
  * main - check the code for Holberton School students.
  * @argc: number of arguments.
@@ -42,7 +43,6 @@ int main(int argc, char *argv[])
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_file(file_from, file_to, argv);
-
 
 	nchars = 1024;
 	while (nchars == 1024)
